@@ -10,4 +10,5 @@ suite : Test
 suite =
     describe "The Parp module"
         [ test "parp" <| \_ -> Expect.equal "Parp!" parp
+        , test "five" <| \_ -> Expect.equal 5 (2 + 3) 
         ]
