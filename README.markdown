@@ -11,7 +11,7 @@ These steps assume you have `elm` and `elm-test` available on your $PATH.
 3. observe that the test suite is okay
 4. `elm-test --watch`
 5. observe that that test suite is still okay
-6. run this command which will touch a test file and immediatly `make` it:
+6. leave the watch running, and in another terminal, run this command which will touch a test file and immediatly `make` it:
 
     `touch tests/TestParp.elm; elm-test make`
 
@@ -23,7 +23,7 @@ Now it gets good:
 9. `cd ../package`
 10. `elm-test --watch`
 11. observe that on the first run, test suite is *still* okay
-12. run this command which will touch a test file and immediatly `make` it:
+12. leave the watch running, and in another terminal, run this command which will touch a test file and immediatly `make` it:
 
     `touch tests/TestParp.elm; elm-test make`
 
@@ -33,7 +33,7 @@ Now it gets good:
 
     **ACTUAL**: an error from Elm about missing packages??
 
-    ```
+    ```txt
     TestParp.elm changed. Rebuilding!
     -- MISSING DEPENDENCIES ----------------------------------------------- elm.json
 
